@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* CSS để thêm hiệu ứng */
+        h1 {
+            color: blue;
+            animation: colorChange 2s infinite;
+        }
+
+        @keyframes colorChange {
+            0% { color: blue; }
+            50% { color: red; }
+            100% { color: blue; }
+        }
+    </style>
+    <script>
+        // JavaScript để thêm hiệu ứng
+        window.addEventListener('load', function() {
+            var text = document.querySelector('p');
+            text.addEventListener('mouseover', function() {
+                text.style.fontSize = '24px';
+            });
+            text.addEventListener('mouseout', function() {
+                text.style.fontSize = '16px';
+            });
+        });
+    </script>
 </head>
 <body>
-    <h1>chao</h1>
+    <h1>Chúc mừng Su ngày Phụ nữ Việt Nam!</h1>
+    <p>Chúc mừng ngày 20/10, cô gái của trái tim anh <3.</p>
 </body>
 </html>
